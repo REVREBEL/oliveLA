@@ -1,27 +1,32 @@
 {
-  "name": "revrebel-component-library",
+  "name": "olivela",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "builder:gen": "ts-node --project olivela/scripts/tsconfig.scripts.json --require tsconfig-paths/register olivela/scripts/generate-builder-registry.ts",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "generate-builder-registry": "tsx scripts/generate-builder-registry.ts"
+    "lint": "next lint"
   },
   "dependencies": {
-
-    "next": "15.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@builder.io/react": "^8.2.6",
+    "@builder.io/sdk": "^6.1.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "next": "15.4.4"
   },
   "devDependencies": {
-    "@types/node": "^20.14.10",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "eslint": "^8.57.0",
-    "eslint-config-next": "15.1.0",
-    "tsx": "^4.16.2",
-    "typescript": "^5.5.3"
+    "typescript": "^5.8.3",
+    "@types/node": "^24.1.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "builder": "^5.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.4",
+    "@eslint/eslintrc": "^3",
+    "ts-morph": "^26.0.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0"
   }
 }

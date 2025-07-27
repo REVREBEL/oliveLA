@@ -1,5 +1,22 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
+    "target": "ES2020",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+=======
     "target": "ES2017",
     "lib": [
       "dom",
@@ -21,12 +38,26 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+>>>>>>> ai_main_f27a48c3a041
     "plugins": [
       {
         "name": "next"
       }
     ]
   },
+<<<<<<< HEAD
+},
+  "include": [
+    "next-env.d.ts",
+    "src",
+    "scripts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
+=======
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
@@ -37,3 +68,4 @@
     "node_modules"
   ]
 }
+>>>>>>> ai_main_f27a48c3a041
