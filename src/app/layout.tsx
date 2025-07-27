@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "REVREBEL REBELstyle",
-  description: "REVREBEL Component Library using Builder.io, Xano, DevLink, and Webflow",
+  title: "oliveLA",
+  description: "Their Demo Hotel Website made for OliveAI by REVREBEL a component Library using Builder.io, Xano, DevLink, and Webflow",
 };
 
 export default function RootLayout({
