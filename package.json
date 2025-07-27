@@ -10,7 +10,7 @@
     "generate-builder-registry": "tsx scripts/generate-builder-registry.ts"
   },
   "dependencies": {
-    "@builder.io/react": "^3.3.0",
+    "@builder.io/react": "latest",
     "next": "15.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
