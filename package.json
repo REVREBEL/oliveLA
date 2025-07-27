@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "builder:gen": "ts-node --project olivela/scripts/tsconfig.scripts.json --require tsconfig-paths/register olivela/scripts/generate-builder-registry.ts",
+    "builder:gen": "ts-node --project scripts/tsconfig.scripts.json --require tsconfig-paths/register scripts/generate-builder-registry.ts",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
