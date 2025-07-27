@@ -13,12 +13,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": ".",
+    "baseUrl": "src",
     "outDir": "dist",
     "paths": {
-      "@/*": ["./src/*"],
-      "@/devlink": ["src/devlink/components"],
-      "@/devlink/*": ["src/devlink/components/*"]
+      "@/*": ["*"],
+      "@/devlink": ["devlink/components"],
+      "@/devlink/*": ["devlink/components/*"]
     },
     "plugins": [
       {
