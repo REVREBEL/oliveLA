@@ -1,32 +1,22 @@
 import { Builder } from "@builder.io/react";
 
-// Import test component first
+// Import test component first to verify basic registration works
 import { TestComponent } from "./test-registry";
 
-// Import main components using correct path mappings (tsconfig maps @/devlink to src/devlink/components)
-import { HomepageHero } from "@/devlink/HomepageHero";
-Builder.registerComponent(HomepageHero, {
-  name: "HomepageHero",
-  description: "Homepage hero section",
+// Register test component to verify Builder.io connection
+Builder.registerComponent(TestComponent, {
+  name: "TestComponent",
+  description: "Test component to verify Builder.io registration is working",
   inputs: [
     {
-      name: "heroImageHeroImage",
+      name: "text",
       type: "string",
-      defaultValue: "https://cdn.prod.website-files.com/6876ee37d5601de6f43d0c68/6877257c094ccace91f1d74c_a30a1453-9167-4c21-ae29-e5295f6281e6.avif",
-    },
-    {
-      name: "headingHeadingText", 
-      type: "string",
-      defaultValue: "Unwind in sun-drenched suites, mid-century style, and a splash of playful glamour.",
-    },
-    {
-      name: "userUserGreetingText",
-      type: "string", 
-      defaultValue: "hey john, welcome back!",
+      defaultValue: "Hello from Test Component",
     }
   ]
 });
 
+// Try just the simplest components first - buttons
 import { OliveButton } from "@/devlink/OliveButton";
 Builder.registerComponent(OliveButton, {
   name: "OliveButton",
@@ -46,39 +36,21 @@ Builder.registerComponent(OliveButton, {
   ]
 });
 
-import { OliveNav } from "@/devlink/OliveNav";
-Builder.registerComponent(OliveNav, {
-  name: "OliveNav",
-  description: "Olive navigation component",
-});
-
-import { OliveFooter } from "@/devlink/OliveFooter";
-Builder.registerComponent(OliveFooter, {
-  name: "OliveFooter",
-  description: "Olive footer component",
-});
-
-import { SectionFeatures } from "@/devlink/SectionFeatures";
-Builder.registerComponent(SectionFeatures, {
-  name: "SectionFeatures",
-  description: "Features section component",
-});
-
-import { SectionReviews } from "@/devlink/SectionReviews";
-Builder.registerComponent(SectionReviews, {
-  name: "SectionReviews",
-  description: "Reviews section component",
-});
-
-// Register test component to verify Builder.io connection
-Builder.registerComponent(TestComponent, {
-  name: "TestComponent",
-  description: "Test component to verify Builder.io registration is working",
+import { OliveSmallButton } from "@/devlink/OliveSmallButton";
+Builder.registerComponent(OliveSmallButton, {
+  name: "OliveSmallButton",
+  description: "Small olive button component",
   inputs: [
     {
-      name: "text",
+      name: "buttonStyleButtonCta",
       type: "string",
-      defaultValue: "Hello from Test Component",
+      defaultValue: "Small Button",
+    },
+    {
+      name: "buttonStyleButtonColor",
+      type: "string",
+      defaultValue: "Primary",
+      enum: ["Primary", "Primary Outline", "Inverse", "Inverse Outline", "Secondary", "Tertiary"]
     }
   ]
 });
