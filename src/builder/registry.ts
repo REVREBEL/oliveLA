@@ -3,8 +3,8 @@ import { Builder } from "@builder.io/react";
 // Import test component first
 import { TestComponent } from "./test-registry";
 
-// Import main components from devlink/components
-import { HomepageHero } from "@/devlink/components/HomepageHero";
+// Import main components using correct path mappings (tsconfig maps @/devlink to src/devlink/components)
+import { HomepageHero } from "@/devlink/HomepageHero";
 Builder.registerComponent(HomepageHero, {
   name: "HomepageHero",
   description: "Homepage hero section",
@@ -27,7 +27,7 @@ Builder.registerComponent(HomepageHero, {
   ]
 });
 
-import { OliveButton } from "@/devlink/components/OliveButton";
+import { OliveButton } from "@/devlink/OliveButton";
 Builder.registerComponent(OliveButton, {
   name: "OliveButton",
   description: "Olive styled button component",
@@ -46,16 +46,28 @@ Builder.registerComponent(OliveButton, {
   ]
 });
 
-import { OliveNav } from "@/devlink/components/OliveNav";
+import { OliveNav } from "@/devlink/OliveNav";
 Builder.registerComponent(OliveNav, {
   name: "OliveNav",
   description: "Olive navigation component",
 });
 
-import { OliveFooter } from "@/devlink/components/OliveFooter";
+import { OliveFooter } from "@/devlink/OliveFooter";
 Builder.registerComponent(OliveFooter, {
   name: "OliveFooter",
   description: "Olive footer component",
+});
+
+import { SectionFeatures } from "@/devlink/SectionFeatures";
+Builder.registerComponent(SectionFeatures, {
+  name: "SectionFeatures",
+  description: "Features section component",
+});
+
+import { SectionReviews } from "@/devlink/SectionReviews";
+Builder.registerComponent(SectionReviews, {
+  name: "SectionReviews",
+  description: "Reviews section component",
 });
 
 // Register test component to verify Builder.io connection
