@@ -1,9 +1,23 @@
 {
   "global": {},
+  "Colors": {},
+  "Buttons": {},
+  "Typography": {},
+  "Links": {},
+  "Sizing": {},
+  "Forms": {},
+  "Cards": {},
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": [
-      "global"
+      "global",
+      "Colors",
+      "Buttons",
+      "Typography",
+      "Links",
+      "Sizing",
+      "Forms",
+      "Cards"
     ]
   }
 }
