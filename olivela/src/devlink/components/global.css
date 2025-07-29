@@ -2317,9 +2317,7 @@ textarea.w-select {
   --_buttons---button-inverse--btn-inverse-border-hover: var(--core-colors--secondary);
   --_cards---card-secondary--card-secondary-bg-hover: var(--core-colors--secondary);
   --_buttons---button-inverse--btn-inverse-inner-shadow-hover: color-mix(in srgb, white 90%, currentColor);
-  --_buttons---button-inverse--btn-inverse-border-shadow-hover: color-mix(in srgb, white 60%, currentColor)
-
-;
+  --_buttons---button-inverse--btn-inverse-border-shadow-hover: color-mix(in srgb, white 60%, currentColor);
   --_buttons---button-inverse-outline--btn-inverse-outline-bg: transparent;
   --_cards---card-secondary--card-secondary-text: var(--core-colors--inverse);
   --_buttons---button-inverse-outline--btn-inverse-outline-bg-hover: transparent;
@@ -2420,7 +2418,6 @@ textarea.w-select {
   --_headers---h2-heading--h2-line-height: 1.04em;
   --_headers---h2-heading--h2-weight: 300;
   --_headers---h2-heading--h2-margin-bottom: 0.35em;
-  --_headers---h3-heading--h3-size-tablet\<deleted\|variable-bb63aea0-3d4a-7a6c-7e87-c5ac70d1c679\>: 1.6rem;
   --_headers---h3-heading--h3-size: 2rem;
   --_headers---h3-heading--h3-letter-spacing: -0.01em;
   --_headers---h3-heading--h3-line-height: 1.04em;
