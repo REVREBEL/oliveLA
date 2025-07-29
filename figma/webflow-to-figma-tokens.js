@@ -2,8 +2,8 @@ import fetch from "node-fetch";
 import fs from "fs";
 
 // Replace with your Webflow API Token and Site ID
-const WEBFLOW_API_TOKEN = "YOUR_WEBFLOW_API_TOKEN";
-const SITE_ID = "YOUR_SITE_ID";
+const WEBFLOW_API_TOKEN = "WEBFLOW_SITE_API_TOKEN";
+const SITE_ID = "WEBFLOW_SITE_ID";
 
 async function fetchWebflowVariables() {
   const response = await fetch(`https://api.webflow.com/v2/sites/${SITE_ID}/variables`, {
