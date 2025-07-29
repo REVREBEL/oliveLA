@@ -1,9 +1,20 @@
 import fetch from "node-fetch";
 import fs from "fs";
 
+import dotenv from 'dotenv';
+dotenv.config();
+
+// .env degbuging
+console.log('Reading .env WEBFLOW_SITE_API_TOKEN:', process.env.WEBFLOW_SITE_API_TOKEN);
+console.log('Reading .env WEBFLOW_SITE_ID:', process.env.WEBFLOW_SITE_ID);
+
 // Replace with your Webflow API Token and Site ID
-const WEBFLOW_API_TOKEN = "WEBFLOW_SITE_API_TOKEN";
-const SITE_ID = "WEBFLOW_SITE_ID";
+const WEBFLOW_API_TOKEN = process.env.WEBFLOW_SITE_API_TOKEN;
+const SITE_ID = process.env.WEBFLOW_SITE_ID;
+
+// script degbuging
+console.log('Reading Script Variable WEBFLOW_API_TOKEN:', WEBFLOW_API_TOKEN);
+console.log('Reading Script Variable SITE_ID', SITE_ID);
 
 async function fetchWebflowVariables() {
   const response = await fetch(`https://api.webflow.com/v2/sites/${SITE_ID}/variables`, {
